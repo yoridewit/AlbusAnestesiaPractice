@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Albus Anesthesia</string>
+    <string name="cdAlbusLogo">Albus Logo</string>
+    <string name="yori">Yori</string>
+    <string name="hfdst1">Circulatiestilstand: Schokbaar</string>
+    <string name="hfdst2">Circulatiestilstand: Niet Schokbaar</string>
+    <string name="hfdst3">Reanimatie van zwangere</string>
+    <string name="hfdst4">Onverwacht moeilijke intubatie</string>
+    <string name="hfdst5">Respiratoire insufficiëntie na detubatie</string>
+    <string name="hfdst6">Hypoxie</string>
+    <string name="hfdst7">Bronchospasme</string>
+    <string name="hfdst8">Pneumothorax</string>
+    <string name="hfdst9">Longembolie</string>
+    <string name="hfdst10">Hypotensie</string>
+    <string name="hfdst11">Bloeding/Massaal transfusie protocol</string>
+    <string name="hfdst12">Fluxus post-partum</string>
+    <string name="hfdst13">Bradycardie met hypotensie</string>
+    <string name="hfdst14">Tachycardie met hypotensie</string>
+    <string name="hfdst15">Myocardischemie</string>
+    <string name="hfdst16">Anafylaxie</string>
+    <string name="hfdst17">Maligne hyperthermie</string>
+    <string name="hfdst18">Transfusiereactie</string>
+    <string name="hfdst19">Totaal spinaal/epiduraal block</string>
+    <string name="hfdst20">Intoxicatie lokale anesthetica</string>
+    <string name="hfdst21">Brand op OK</string>
+    <string name="hfdst22">Falende O2-toevoer</string>
+    <string name="hfdst23">Stroomstoring</string>
+</resources>

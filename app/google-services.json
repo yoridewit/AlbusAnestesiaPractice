@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "411745507022",
+    "firebase_url": "https://albusanesthesia.firebaseio.com",
+    "project_id": "albusanesthesia",
+    "storage_bucket": "albusanesthesia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411745507022:android:d3900fb4e2f3aeb2",
+        "android_client_info": {
+          "package_name": "com.albusanesthesia.albusanesthesia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411745507022-584utfhr2rsm1ofnnmmsdapuajnhm1dn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.albusanesthesia.albusanesthesia",
+            "certificate_hash": "170c170426de1f6a46edf8293dc89cedfa70a60b"
+          }
+        },
+        {
+          "client_id": "411745507022-83qai2svlbtgvbq16euumfkougktmhr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsqRCG1hGvhxydFysm08JtqtgVXJ8YO7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411745507022-83qai2svlbtgvbq16euumfkougktmhr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

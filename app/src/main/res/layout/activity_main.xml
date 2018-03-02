@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context="com.albusanesthesia.albusanesthesia.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgAlbusLogo"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:contentDescription="@string/cdAlbusLogo"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/albus_logo_big"/>
+
+    <ImageView
+        android:id="@+id/imgMainLoginUser"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="loginUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_white_24px"/>
+
+    <TextView
+        android:id="@+id/tvMainLoginMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Login User"
+        android:fontFamily="@font/roboto"
+        android:text="Log In"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imgMainLoginUser"
+        app:layout_constraintStart_toStartOf="@+id/imgMainLoginUser"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainLoginUser"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="450dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="603dp"/>
+
+    <ImageView
+        android:id="@+id/imgMainSpoedbundel"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:srcCompat="@drawable/survey"/>
+
+    <ImageView
+        android:id="@+id/imgMainMedicatie"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="48dp"
+        android:contentDescription="Medicaties"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:srcCompat="@drawable/syringe"/>
+
+    <ImageView
+        android:id="@+id/imgMainOpiaten"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Opiaten Registratie"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/ampoul"/>
+
+    <ImageView
+        android:id="@+id/imgMainChat"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/chat"/>
+
+    <ImageView
+        android:id="@+id/imgMainSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_settings_white_24px"/>
+
+    <TextView
+        android:id="@+id/tvMainSpoedbundel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Spoedbundel"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imgMainSpoedbundel"
+        app:layout_constraintStart_toStartOf="@+id/imgMainSpoedbundel"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainSpoedbundel"/>
+
+    <TextView
+        android:id="@+id/tvMainMedicatie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Medicaties"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgMainMedicatie"
+        app:layout_constraintStart_toStartOf="@+id/imgMainMedicatie"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainMedicatie"/>
+
+    <TextView
+        android:id="@+id/tvMainOpiaten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Opiaten Registratie"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgMainOpiaten"
+        app:layout_constraintStart_toStartOf="@+id/imgMainOpiaten"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainOpiaten"/>
+
+    <TextView
+        android:id="@+id/tvMainChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="OK Chat"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgMainChat"
+        app:layout_constraintStart_toStartOf="@+id/imgMainChat"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainChat"/>
+
+</android.support.constraint.ConstraintLayout>
