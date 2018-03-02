@@ -8,7 +8,6 @@ import android.transition.ChangeBounds
 import android.transition.TransitionManager
 import android.view.View
 import android.view.animation.OvershootInterpolator
-import kotlinx.android.synthetic.main.activity_spoedbundel_index.*
 import kotlinx.android.synthetic.main.activity_spoedbundel_start.*
 
 
@@ -35,6 +34,7 @@ class Spoedbundel : AppCompatActivity() {
         imgBaby.setOnClickListener {
             if (selectedView != imgBaby) {
                 updateConstraints(R.layout.activity_spoedbundel_start_baby)
+                println("Clicked baby")
                 selectedView = imgBaby
             } else
                 toDefault()
@@ -43,6 +43,7 @@ class Spoedbundel : AppCompatActivity() {
         imgAdult.setOnClickListener {
             if (selectedView != imgAdult) {
                 updateConstraints(R.layout.activity_spoedbundel_start_adult)
+                println("Clicked adult")
                 selectedView = imgBaby
             } else
                 toDefault()
@@ -59,11 +60,11 @@ class Spoedbundel : AppCompatActivity() {
     fun updateConstraints(@LayoutRes id: Int) {
         val newConstraintSet = ConstraintSet()
         newConstraintSet.clone(this, id)
-        newConstraintSet.applyTo(root)
+        newConstraintSet.applyTo(constraintChapters)
 
         val transition = ChangeBounds()
         transition.interpolator = OvershootInterpolator()
-        TransitionManager.beginDelayedTransition(root, transition)
+        TransitionManager.beginDelayedTransition(constraintChapters, transition)
     }
 }
 
