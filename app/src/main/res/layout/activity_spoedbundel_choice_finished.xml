@@ -15,33 +15,32 @@
         android:id="@+id/imgBaby"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgAdult"
-        app:layout_constraintEnd_toEndOf="@+id/imgAdult"
-        app:layout_constraintStart_toStartOf="@+id/imgAdult"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baby"/>
 
     <ImageView
         android:id="@+id/imgAdult"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="100dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/imgBaby"
+        app:layout_constraintEnd_toEndOf="@+id/imgBaby"
+        app:layout_constraintStart_toStartOf="@+id/imgBaby"
         app:srcCompat="@drawable/man"/>
 
     <EditText
         android:id="@+id/editTextWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:backgroundTint="@color/primaryTextColor"
         android:fontFamily="@font/roboto"
         android:hint="KG"
@@ -52,10 +51,9 @@
         android:textSize="100sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/imgAdult"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/imgAdult"/>
-
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
         android:id="@+id/btnNoWeight"
@@ -63,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="24dp"
         android:background="@color/primaryLightColor"
         android:fontFamily="@font/roboto"
         android:text=" Zonder Gewicht "
@@ -71,9 +69,10 @@
         android:textColor="@color/primaryTextColor"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEnterWeight"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvOf"/>
 
     <TextView
         android:id="@+id/tvKeuzeVolwassenen"
@@ -85,8 +84,9 @@
         android:fontFamily="@font/roboto"
         android:text="Volwassenen"
         android:textColor="@color/primaryTextColor"
-        android:textSize="24sp"
+        android:textSize="14sp"
         android:textStyle="bold"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/imgAdult"
         app:layout_constraintStart_toStartOf="@+id/imgAdult"
         app:layout_constraintTop_toBottomOf="@+id/imgAdult"/>
@@ -97,15 +97,16 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto"
         android:text="OF"
         android:textColor="@color/primaryTextColor"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEnterWeight"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight"/>
 
     <TextView
         android:id="@+id/tvKeuzeJkz"
@@ -116,9 +117,9 @@
         android:fontFamily="@font/roboto"
         android:text="Kinderen"
         android:textColor="@color/primaryTextColor"
-        android:textSize="14sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/imgBaby"
         app:layout_constraintStart_toStartOf="@+id/imgBaby"
         app:layout_constraintTop_toBottomOf="@+id/imgBaby"/>
@@ -129,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@color/primaryLightColor"
         android:fontFamily="@font/roboto"
         android:text=" Doseergewicht "
@@ -137,6 +138,7 @@
         android:textColor="@color/primaryTextColor"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5"/>
@@ -145,18 +147,16 @@
         android:id="@+id/textViewWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="32dp"
         android:fontFamily="@font/roboto"
         android:textAlignment="center"
         android:textColor="@color/primaryTextColor"
         android:textSize="50sp"
         android:textStyle="bold"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBaby"
+        app:layout_constraintStart_toEndOf="@+id/imgBaby"
+        app:layout_constraintTop_toTopOf="@+id/imgBaby"
         tools:text="80"/>
 
     <android.support.constraint.Guideline

@@ -4,539 +4,173 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/root"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryColor"
-    tools:context="com.albusanesthesia.albusanesthesia.Spoedbundel">
+    tools:context="com.albusanesthesia.albusanesthesia.Spoedbundel"
+    tools:layout_editor_absoluteY="25dp">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imgBaby"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/constraintMenu"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-
-            <ImageView
-                android:id="@+id/imgSpoedbundelHome"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginEnd="32dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.52"
-                app:srcCompat="@drawable/ic_home_white_48px"
-                tools:ignore="VectorDrawableCompat"/>
-
-
-        </android.support.constraint.ConstraintLayout>
-
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/constraintChapters"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintMenu">
-
-            <ImageView
-                android:id="@+id/imgBaby"
-                android:layout_width="220dp"
-                android:layout_height="220dp"
-                android:layout_marginBottom="100dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline4"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/baby"/>
-
-            <ImageView
-                android:id="@+id/imgAdult"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginBottom="75dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/imgBaby"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/btnChapter06"
-                app:srcCompat="@drawable/man"/>
-
-            <Button
-                android:id="@+id/btnChapter01"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#212121"
-                android:text="Circulatiestilstand: schokbaar"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
-
-            <Button
-                android:id="@+id/btnChapter02"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#424242"
-                android:text="Circulatiestilstand: niet schokbaar"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter01"
-                />
-
-            <Button
-                android:id="@+id/btnChapter03"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#616161"
-                android:text="Reanimatie van zwangere"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter02"
-                />
-
-            <Button
-                android:id="@+id/btnChapter04"
-
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:alpha="0"
-                android:background="#01579B"
-                android:text="Onverwacht moeilijke intubatie"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter03"
-                />
-
-            <Button
-                android:id="@+id/btnChapter05"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#0277BD"
-                android:text="Respiratoire insufficiëntie na detubatie"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter04"
-                />
-
-            <Button
-                android:id="@+id/btnChapter06"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#03A9F4"
-                android:text="Hypoxie"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter05"
-                />
-
-            <Button
-                android:id="@+id/btnChapter07"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#81D4FA"
-                android:text="Bronchospasme"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter06"
-                />
-
-            <Button
-                android:id="@+id/btnChapter08"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#B3E5FC"
-                android:text="Pneumothorax"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter07"
-                />
-
-            <Button
-                android:id="@+id/btnChapter09"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#E1F5FE"
-                android:text="Longembolie"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter08"
-                />
-
-            <Button
-                android:id="@+id/btnChapter10"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FBE9E7"
-                android:text="Hypotensie"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter09"
-                />
-
-            <Button
-                android:id="@+id/btnChapter11"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FFCCBC"
-                android:text="Bloeding/Massaal transfusie protocol"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter10"
-                />
-
-            <Button
-                android:id="@+id/btnChapter12"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FFAB91"
-                android:text="Fluxus post-partum"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter11"
-                />
-
-            <Button
-                android:id="@+id/btnChapter13"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FF8A65"
-                android:text="Bradycardie met hypotensie"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter12"
-                />
-
-            <Button
-                android:id="@+id/btnChapter14"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FF7043"
-                android:text="Tachycardie met hypotensie"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter13"
-                />
-
-            <Button
-                android:id="@+id/btnChapter15"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#F4511E"
-                android:text="Myocardischemie"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter14"
-                />
-
-            <Button
-                android:id="@+id/btnChapter16"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FBC02D"
-                android:text="Anafylaxie"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter15"
-                />
-
-            <Button
-                android:id="@+id/btnChapter17"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FDD835"
-                android:text="Maligne hyperthermie"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter16"
-                />
-
-            <Button
-                android:id="@+id/btnChapter18"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FFEE58"
-                android:text="Transfusiereactie"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter17"
-                />
-
-            <Button
-                android:id="@+id/btnChapter19"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FFF59D"
-                android:text="Totaal spinaal/epiduraal block"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter18"
-                />
-
-            <Button
-                android:id="@+id/btnChapter20"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#FFFDE7"
-                android:text="Intoxicatie lokale anesthetica"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter19"
-                />
-
-            <Button
-                android:id="@+id/btnChapter21"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#EEEEEE"
-                android:text="Brand op OK"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter20"
-                />
-
-            <Button
-                android:id="@+id/btnChapter22"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#BDBDBD"
-                android:text="Falende O2-toevoer"
-                android:textColor="@color/secondaryTextColor"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter21"
-                />
-
-            <Button
-                android:id="@+id/btnChapter23"
-                android:alpha="0"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:background="#757575"
-                android:text="Stroomstoring"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter22"
-                />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="450dp"/>
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="505dp"/>
-
-            <TextView
-                android:id="@+id/tvKeuzeJkz"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/roboto"
-                android:text="Kinderen"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/imgBaby"
-                app:layout_constraintStart_toStartOf="@+id/imgBaby"
-                app:layout_constraintTop_toBottomOf="@+id/imgBaby"/>
-
-            <TextView
-                android:id="@+id/tvKeuzeVolwassenen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/roboto"
-                android:text="Volwassenen"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/imgAdult"
-                app:layout_constraintStart_toStartOf="@+id/imgAdult"
-                app:layout_constraintTop_toBottomOf="@+id/imgAdult"/>
-
-            <Button
-                android:id="@+id/btnEnterWeight"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="50dp"
-                android:background="@color/primaryLightColor"
-                android:fontFamily="@font/roboto"
-                android:text=" Doseergewicht "
-                android:textAlignment="center"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/guideline4"/>
-
-            <Button
-                android:id="@+id/btnNoWeight"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="75dp"
-                android:background="@color/primaryLightColor"
-                android:fontFamily="@font/roboto"
-                android:text=" Zonder Gewicht "
-                android:textAlignment="center"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/btnChapter15"
-                app:layout_constraintStart_toStartOf="@+id/btnChapter15"
-                app:layout_constraintTop_toBottomOf="@+id/btnEnterWeight"/>
-
-            <TextView
-                android:id="@+id/tvOf"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/roboto"
-                android:text="OF"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/btnNoWeight"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/btnChapter14"
-                app:layout_constraintTop_toBottomOf="@+id/btnEnterWeight"/>
-
-            <EditText
-                android:id="@+id/editTextWeight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:inputType="number"
-                android:text="KG"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/imgAdult"
-                app:layout_constraintStart_toStartOf="@+id/imgBaby"
-                app:layout_constraintTop_toBottomOf="@+id/btnChapter23"/>
-
-
-        </android.support.constraint.ConstraintLayout>
-
-    </android.support.constraint.ConstraintLayout>
+        app:srcCompat="@drawable/baby"/>
+
+    <ImageView
+        android:id="@+id/imgAdult"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgBaby"
+        app:layout_constraintEnd_toEndOf="@+id/imgBaby"
+        app:layout_constraintStart_toStartOf="@+id/imgBaby"
+        app:srcCompat="@drawable/man"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:fontFamily="@font/roboto"
+        android:hint="KG"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBaby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgBaby"/>
+
+
+    <Button
+        android:id="@+id/btnNoWeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/primaryLightColor"
+        android:fontFamily="@font/roboto"
+        android:text=" Zonder Gewicht "
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnterWeight"/>
+
+    <TextView
+        android:id="@+id/tvKeuzeVolwassenen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Volwassenen"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imgAdult"
+        app:layout_constraintStart_toStartOf="@+id/imgAdult"
+        app:layout_constraintTop_toBottomOf="@+id/imgAdult"/>
+
+    <TextView
+        android:id="@+id/tvOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="OF"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnterWeight"/>
+
+    <TextView
+        android:id="@+id/tvKeuzeJkz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Kinderen"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgBaby"
+        app:layout_constraintStart_toStartOf="@+id/imgBaby"
+        app:layout_constraintTop_toBottomOf="@+id/imgBaby"/>
+
+    <Button
+        android:id="@+id/btnEnterWeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/primaryLightColor"
+        android:fontFamily="@font/roboto"
+        android:text=" Doseergewicht "
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"/>
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="80"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="603dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="450dp"/>
 
 </android.support.constraint.ConstraintLayout>
